@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Көчмөндөр Жаңырыгы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page">
+   <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
+  <!-- Header -->
+  <!-- <header class="header">
+    
+  </header> -->
+
+  <!-- Hero emblem -->
+  <div class="logo">
+    <img src="./assets/media/imagelogo.png" alt="">
+  </div>
+
+  <!-- Title -->
+  <div class="title-block">
+    <div class="title-main">КӨЧМӨНДӨР<br>ЖАҢЫРЫГЫ</div>
+    <div class="title-sub">Улуттук тандоо</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Info -->
+  <div class="info-row">
+    <div class="info-item">
+      <div class="label">Дата:</div>
+      <div class="value">7-МАЙ 19:00</div>
+    </div>
+    <div class="info-item info-item--right">
+      <div class="label">Место:</div>
+      <div class="value">ЭСКИ АЯНТ</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a href="#nation" class="cta-btn">КАТЫШУУ</a>
+  </div>
+
+  <!-- Countdown -->
+  <div class="countdown">
+    <div class="cd-cell">
+      <div class="num" id="cd-days">00</div>
+      <div class="unit">Күн</div>
+    </div>
+    <div class="cd-cell">
+      <div class="num" id="cd-hours">00</div>
+      <div class="unit">Саат</div>
+    </div>
+    <div class="cd-cell">
+      <div class="num" id="cd-mins">00</div>
+      <div class="unit">Мин</div>
+    </div>
+    <div class="cd-cell">
+      <div class="num" id="cd-secs">00</div>
+      <div class="unit">Сек</div>
+    </div>
+  </div>
+
+  <!-- <div class="safe-bottom"></div> -->
+</div>
+<section>
+  <div class='air air1'></div>
+  <div class='air air2'></div>
+  <div class='air air3'></div>
+  <div class='air air4'></div>
+  <div class="about">
+    <h2>О ФЕСТИВАЛЕ</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, eveniet excepturi. Nostrum eveniet cum repellendus. Eaque, rerum? Neque reprehenderit aperiam doloribus vero quibusdam amet pariatur nam aut iusto dolor. Est quibusdam doloremque labore! Maiores quis dolor rem facilis recusandae architecto praesentium laboriosam saepe harum, vitae, perferendis, alias tempora vel error.</p>
+  </div>
+</section>
+<section class="nation" id="nation">
+  <h2>Национальный отбор</h2>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, fugiat. Consectetur delectus fuga quidem a nihil non, reprehenderit aspernatur quasi repellendus, pariatur et. Provident veniam distinctio, tenetur neque aperiam ea ipsa iusto nihil beatae qui, veritatis dolore voluptas possimus non, sequi autem amet. Eaque reiciendis qui corrupti repellat consequatur ipsum.</p>
+  <div class="cta-wrap">
+    <a href="https://t.me/graf_amadeus" class="cta-btn">КАТЫШУУ</a>
+  </div>
+</section>
+<section class="members">
+  <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
+    <div class="member-cards">
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      <div class="member-card">
+        <img src="./assets/media/envato-labs-image-edit.png" alt="">
+        <p>Хантенир<br> Омкеев</p>
+      </div>
+      
+    </div>
+</section>
+<script>
+  const target = new Date('2026-05-07T19:00:00');
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent  = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent  = '00';
+      document.getElementById('cd-secs').textContent  = '00';
+      return;
+    }
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000)  / 60000);
+    const secs  = Math.floor((diff % 60000)    / 1000);
+    document.getElementById('cd-days').textContent  = pad(days);
+    document.getElementById('cd-hours').textContent = pad(hours);
+    document.getElementById('cd-mins').textContent  = pad(mins);
+    document.getElementById('cd-secs').textContent  = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
